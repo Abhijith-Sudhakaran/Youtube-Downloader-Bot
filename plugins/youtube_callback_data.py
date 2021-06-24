@@ -74,9 +74,9 @@ async def catch_youtube_dldata(c, q):
     if not os.path.isdir(userdir):
         os.makedirs(userdir)
     await q.edit_message_reply_markup(
-        InlineKeyboardMarkup([[InlineKeyboardButton("Downloading...", callback_data="down")]]))
+        InlineKeyboardMarkup([[InlineKeyboardButton("Downloading File 💾...", callback_data="down")]]))
     filepath = os.path.join(userdir, filext)
-    # await q.edit_message_reply_markup([[InlineKeyboardButton("Processing..")]])
+    # await q.edit_message_reply_markup([[InlineKeyboardButton("Uploading📤...")]])
 
     audio_command = [
         "youtube-dl",
