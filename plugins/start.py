@@ -1,7 +1,7 @@
 from pyrogram import Client, Filters, StopPropagation, InlineKeyboardButton, InlineKeyboardMarkup
 
 
-@Client.on_message(Filters.command(["start, start@Xyoutube_bot"]), group=-2)
+@Client.on_message(Filters.command(["start"]), group=-2)
 async def start(client, message):
     # return
     Lasiya = InlineKeyboardMarkup([
